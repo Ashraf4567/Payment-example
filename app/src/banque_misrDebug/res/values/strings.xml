@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Payment example</string>
+
+    <string name="payment_gate">banque misr payment</string>
+</resources>
