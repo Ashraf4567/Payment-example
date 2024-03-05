@@ -26,19 +26,13 @@ android {
     productFlavors {
         banque_misr {
             dimension "paymentGateway"
-
-            applicationId "com.example.paymentexample.banque_misr"
         }
         fawry {
             dimension "paymentGateway"
-
-            applicationId "com.example.paymentexample.fawry"
         }
 
         gold_plan {
             dimension "paymentGateway"
-
-            applicationId "com.example.paymentexample.gold_plan"
         }
     }
 
