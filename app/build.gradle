@@ -20,12 +20,45 @@ android {
         }
     }
 
+
+    flavorDimensions "paymentGateway"
+
+    productFlavors {
+        banque_misr {
+            dimension "paymentGateway"
+
+            applicationId "com.example.paymentexample.banque_misr"
+        }
+        fawry {
+            dimension "paymentGateway"
+
+            applicationId "com.example.paymentexample.fawry"
+        }
+
+        gold_plan {
+            dimension "paymentGateway"
+
+            applicationId "com.example.paymentexample.gold_plan"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            applicationIdSuffix '.debug'
+        }
+
+        beta {
+            minifyEnabled false
+            applicationIdSuffix '.beta'
+            signingConfig signingConfigs.debug
+        }
     }
+
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
